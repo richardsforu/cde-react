@@ -16,10 +16,15 @@ export default function validateInfo(values){
         errors.password="Password needs to be min 6 character length" 
     }
 
+
+    if(!values.dob){
+        errors.dob="Date of birth is Required"
+    }
+
     if(!values.password2){
         errors.password2="Confirm Password is Required"
     }else if(values.password2 !== values.password){
-        console.log("=====> <<=======");
+       // console.log("=====> <<=======");
         errors.password2="Passowrds do not match" 
     }
 
