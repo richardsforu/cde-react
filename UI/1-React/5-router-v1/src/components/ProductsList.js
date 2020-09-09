@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Product from "./Product";
 
-const ProductsList = () => {
+const ProductsList = (props) => {
   const [products, setProducts] = useState([]);
-
   useEffect(() => {
     axios
       .get("http://localhost:8080/api/products")
