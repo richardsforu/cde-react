@@ -20,7 +20,6 @@ const ProductForm = (props,{ submitForm}) => {
               <div className="form-group">
                 <label>Id</label>
                 <input type="text" 
-                name="id"
                 id="id"
                 className="form-control"
                 defaultValue={product.id}
@@ -31,7 +30,7 @@ const ProductForm = (props,{ submitForm}) => {
 
               <div className="form-group">
                 <label>Product Name</label>
-                <input type="text" name="name" className="form-control"
+                <input type="text" className="form-control"
                 id="name"
                 
                 value={product.name}
@@ -41,7 +40,7 @@ const ProductForm = (props,{ submitForm}) => {
 
               <div className="form-group">
                 <label>Price</label>
-                <input type="text" name="price" className="form-control"
+                <input type="text"  className="form-control"
                 id="price"
                
                 value={product.price}
@@ -52,7 +51,7 @@ const ProductForm = (props,{ submitForm}) => {
               <div className="form-group">
                 <label>Description</label>
                 <textarea
-                  name="description"
+                  
                   id="description"
                   className="form-control"
                    onChange={handleChange}
