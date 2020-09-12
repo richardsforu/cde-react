@@ -48,8 +48,6 @@ const VotingBox = () => { // component area
                         <button className="btn btn-primary" style={{ margin: "5px" }} onClick={e => { dispatch({ type: 'INCREMENT', value: 1 }) }}>Increment</button>
                         <button className="btn btn-primary" onClick={e => { dispatch({ type: 'DECREMENT', value: 1 }) }}>Decrement</button>
                         <button className="btn btn-primary" onClick={e => { dispatch({ type: 'DEFAULT' }) }}>Reset</button>
-
-
                     </div>
 
                     <div className="card-footer text-center">
